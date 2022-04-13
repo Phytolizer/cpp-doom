@@ -11,12 +11,8 @@ include(Catch)
 
 # ---- Tests ----
 
-add_executable(cpp-doom_test source/cpp-doom_test.cpp)
-target_link_libraries(
-    cpp-doom_test PRIVATE
-    cpp-doom_lib
-    Catch2::Catch2WithMain
-)
+add_executable(cpp-doom_test source/catch_main.cpp source/cpp-doom_test.cpp)
+target_link_libraries(cpp-doom_test PRIVATE cpp-doom_lib Catch2::Catch2)
 target_compile_features(cpp-doom_test PRIVATE cxx_std_20)
 
 catch_discover_tests(cpp-doom_test)
