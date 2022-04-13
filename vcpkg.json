@@ -1,0 +1,18 @@
+{
+	"name": "cpp-doom",
+	"version-semver": "0.1.0",
+	"dependencies": [],
+	"default-features": [],
+	"features": {
+		"test": {
+			"description": "Dependencies for testing",
+			"dependencies": [
+				{
+					"name": "catch2",
+					"version>=": "2.13.8"
+				}
+			]
+		}
+	},
+	"builtin-baseline": "99346bb6926e85d93e4aad330bf28cce4a18051b"
+}
