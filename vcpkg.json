@@ -1,7 +1,12 @@
 {
 	"name": "cpp-doom",
 	"version-semver": "0.1.0",
-	"dependencies": [],
+	"dependencies": [
+		{
+			"name": "fmt",
+			"version>=": "8.1.1"
+		}
+	],
 	"default-features": [],
 	"features": {
 		"test": {

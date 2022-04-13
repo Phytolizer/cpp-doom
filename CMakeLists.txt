@@ -15,7 +15,7 @@ include(cmake/variables.cmake)
 
 # ---- Declare library ----
 
-add_library(cpp-doom_lib OBJECT source/lib.cpp)
+add_library(cpp-doom_lib OBJECT source/doom.cpp)
 
 target_include_directories(
 	cpp-doom_lib ${warning_guard}

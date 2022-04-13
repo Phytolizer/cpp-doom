@@ -1,11 +1,12 @@
-#include "lib.hpp"
+#include "doom.hpp"
+#include "doom/types.hpp"
 
 #include <iostream>
+#include <span>
 #include <string>
 
-auto main() -> int {
-	Library lib;
-	std::string message = "Hello from " + lib.Name() + "!";
-	std::cout << message << '\n';
+int main(int argc, const char** argv) {
+	std::span args{argv, static_cast<Size>(argc)};
+	Doom lib{args};
 	return 0;
 }
