@@ -2,4 +2,8 @@
 
 #include <fmt/core.h>
 
-library::library() : name(fmt::format("{}", "cpp-doom")) {}
+Library::Library() : m_name(fmt::format("{}", "cpp-doom")) {}
+
+const std::string& Library::Name() const {
+	return m_name;
+}

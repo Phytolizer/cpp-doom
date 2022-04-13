@@ -10,11 +10,14 @@
  * test the implementation for the executable, because the logic is nicely
  * separated from the command-line logic implemented in the main function.
  */
-struct library {
+class Library {
+	std::string m_name;
+
+  public:
 	/**
 	 * @brief Simply initializes the name member to the name of the project
 	 */
-	library();
+	Library();
 
-	std::string name;
+	const std::string& Name() const;
 };
